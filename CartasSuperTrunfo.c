@@ -26,19 +26,19 @@ int main() {
     scanf("%s", estado);
 
     printf("Digite a cidade: ");
-    scanf(" %[^\n]", cidade);
+    scanf(" %s", cidade);
     
     printf("Digite o país: ");
-    scanf(" %[^\n]", pais); 
+    scanf(" %s", pais); 
     
     printf("Digite a população: ");
-    scanf("%lf", &populacao);
+    scanf("%d", &populacao);
 
     printf("Digite a área (em km²): ");
-    scanf("%lf", &area);
+    scanf("%d", &area);
 
     printf("Digite o PIB (em R$): ");
-    scanf("%lf", &pib);
+    scanf("%d", &pib);
 
     printf("Digite os pontos de viagens (score): ");
     scanf("%hd", &pontosviagens);
@@ -64,19 +64,19 @@ int main() {
     scanf("%s", estado2);
 
     printf("Digite a cidade: ");
-    scanf(" %[^\n]", cidade2);
+    scanf(" %s", cidade2);
     
     printf("Digite o país: ");
-    scanf(" %[^\n]", pais2); 
-    
+    scanf(" %s", pais2);
+
     printf("Digite a população: ");
-    scanf("%lf", &populacao2);
+    scanf("%d", &populacao2);
 
     printf("Digite a área (em km²): ");
-    scanf("%lf", &area2);
+    scanf("%d", &area2);
 
     printf("Digite o PIB (em R$): ");
-    scanf("%lf", &pib2);
+    scanf("%d", &pib2);
 
     printf("Digite os pontos de viagens (score): ");
     scanf("%hd", &pontosviagens2);
@@ -90,28 +90,28 @@ int main() {
     printf("Estado: %s\n", estado);
     printf("Cidade: %s\n", cidade);
     printf("País: %s\n", pais);
-    printf("População: %.2lf\n", populacao);
-    printf("Área: %.2lf km²\n", area);
-    printf("PIB: R$ %.2lf\n", pib);
+    printf("População: %d\n", populacao);
+    printf("Área: %df km²\n", area);
+    printf("PIB: R$ %d\n", pib);
     printf("Pontos de Viagens: %hd\n", pontosviagens);
 
     printf("\nDados da Carta2:\n");
 
     printf("Dados da Carta2:\n");
     printf("ID da Carta: %s\n", idCarta2);
-    printf("ID da Carta: %s\n", idCarta2);
     printf("Estado: %s\n", estado2);
     printf("Cidade: %s\n", cidade2);
     printf("País: %s\n", pais2);
-    printf("População: %.2lf\n", populacao2);
-    printf("Área: %.2lf km²\n", area2);
-    printf("PIB: R$ %.2lf\n", pib2);
+    printf("População: %d\n", populacao2);
+    printf("Área: %d km²\n", area2);
+    printf("PIB: R$ %d\n", pib2);
     printf("Pontos de Viagens: %hd\n", pontosviagens2);
 
-
+    
     printf("Obrigado por cadastrar sua carta!\n");
     printf("Pressione Enter para sair...");
-    scanf("%*c");
+    int c;
+    scanf("%i", &c);
 
     return 0;
 }
