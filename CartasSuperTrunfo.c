@@ -15,7 +15,9 @@ int main() {
     double populacao;
     double area;
     double pib;
-    short pontosviagens; // usei o short para limitar o número de pontos de viagens
+    short pontosviagens;
+    double densidade1 = populacao / area;
+    double pibpercapita = pib / populacao;
 
     printf("Bem-vindo ao sistema de cadastro de cartas!\n");
 
@@ -54,6 +56,8 @@ int main() {
     double area2;
     double pib2;
     short pontosviagens2;
+    double densidade2 = populacao2 / area2;
+    double pibpercapita2 = pib2 / populacao2;
 
     printf("\nAgora, vamos cadastrar a segunda carta.\n");
 
@@ -94,6 +98,8 @@ int main() {
     printf("Área: %df km²\n", area);
     printf("PIB: R$ %d\n", pib);
     printf("Pontos de Viagens: %hd\n", pontosviagens);
+    printf("Densidade: %.2f habitantes/km²\n", densidade1);
+    printf("PIB per capita: R$ %.2f\n", pibpercapita);
 
     printf("\nDados da Carta2:\n");
 
@@ -106,6 +112,8 @@ int main() {
     printf("Área: %d km²\n", area2);
     printf("PIB: R$ %d\n", pib2);
     printf("Pontos de Viagens: %hd\n", pontosviagens2);
+    printf("Densidade: %.2f habitantes/km²\n", densidade2);
+    printf("PIB per capita: R$ %.2f\n", pibpercapita2);
 
     
     printf("Obrigado por cadastrar sua carta!\n");
