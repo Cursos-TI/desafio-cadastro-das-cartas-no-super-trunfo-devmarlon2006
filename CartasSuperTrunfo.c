@@ -18,6 +18,7 @@ int main() {
     short pontosviagens;
     double densidade1 = populacao / area;
     double pibpercapita = pib / populacao;
+    double poder = 1 / populacao + area + pib + pontosviagens + densidade1 + pibpercapita;
 
     printf("Bem-vindo ao sistema de cadastro de cartas!\n");
 
@@ -58,6 +59,7 @@ int main() {
     short pontosviagens2;
     double densidade2 = populacao2 / area2;
     double pibpercapita2 = pib2 / populacao2;
+    double poder2 = 1 / populacao2 + area2 + pib2 + pontosviagens2 + densidade2 + pibpercapita2;
 
     printf("\nAgora, vamos cadastrar a segunda carta.\n");
 
@@ -100,6 +102,7 @@ int main() {
     printf("Pontos de Viagens: %hd\n", pontosviagens);
     printf("Densidade: %.2f habitantes/km²\n", densidade1);
     printf("PIB per capita: R$ %.2f\n", pibpercapita);
+    printf("Poder da Carta: %.2f\n", poder);
 
     printf("\nDados da Carta2:\n");
 
@@ -114,8 +117,26 @@ int main() {
     printf("Pontos de Viagens: %hd\n", pontosviagens2);
     printf("Densidade: %.2f habitantes/km²\n", densidade2);
     printf("PIB per capita: R$ %.2f\n", pibpercapita2);
+    printf("Poder da Carta: %.2f\n", poder2);
 
-    
+
+    printf("\nComparando os atributos das cartas...\n");
+    printf("ID da Carta: %s vs %s\n", idCarta, idCarta2);
+    printf("Estado: %s vs %s\n", estado, estado2);
+    printf("Cidade: %s vs %s\n", cidade, cidade2);
+    printf("País: %s vs %s\n", pais, pais2);
+    printf("População: %d vs %d\n", populacao, populacao2);
+    printf("Área: %d km² vs %d km²\n", area, area2);
+    printf("PIB: R$ %d vs R$ %d\n", pib, pib2);
+    printf("Pontos de Viagens: %hd vs %hd\n", pontosviagens, pontosviagens2);
+    printf("Densidade: %.2f habitantes/km² vs %.2f habitantes/km²\n", densidade1, densidade2);
+    printf("PIB per capita: R$ %.2f vs R$ %.2f\n", pibpercapita, pibpercapita2);
+    printf("Poder da Carta: %.2f vs %.2f\n", poder, poder2);
+
+    printf("\nResultado da comparação:\n");
+    printf("Carta1: %.2f\n", poder);
+    printf("Carta2: %.2f\n", poder2);
+    printf("O ganhador é: %s\n", poder > poder2 ? "Carta1" : "Carta2");
     printf("Obrigado por cadastrar sua carta!\n");
     printf("Pressione Enter para sair...");
     int c;
